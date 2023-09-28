@@ -1,11 +1,10 @@
 package com.api.parkingcontrol.dto;
 
-import jakarta.persistence.Column;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
+import lombok.Data;
 
-import java.time.LocalDateTime;
-
+@Data
 public class ParkingSpotDto {
 
     @NotBlank
@@ -18,19 +17,19 @@ public class ParkingSpotDto {
     @NotBlank
     private String carBrand;
 
-
+    @NotBlank
     private String carModel;
 
-
+    @NotBlank
     private String carColor;
 
-
+    @NotBlank
     private String responsibleName;
 
-
+    @NotBlank
     private String apartment;
 
-
+    @NotBlank
     private String block;
 
 
